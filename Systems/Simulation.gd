@@ -8,6 +8,8 @@ extends Node
 const BARRIER_ID := 1
 const INVISIBLE_BARRIER_ID := 2
 
+var _tracker := EntityTracker.new()
+
 onready var _ground := $GameWorld/GroundTiles
 
 func _ready() -> void:
